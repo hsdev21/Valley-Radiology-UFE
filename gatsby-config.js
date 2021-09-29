@@ -4,12 +4,12 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Valley Radiology`,
-    description: `Valley Radiology in Fayetteville, NC, specializes in diagnosing and treating PAD for men and women at risk. Learn more, or book an appointment now.`,
+    title: `Uterine Fibroids | Valley Radiology`,
+    description: `Valley Radiology in Fayetteville, NC, specializes in personalized care for your uterine fibroids. Learn more, or book an appointment now.`,
     author: `@eddieolivas`,
     www: true,
     https: true,
-    siteUrl: "https://valleyradiologypad.com",
+    siteUrl: "https://valleyradiologyufe.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
