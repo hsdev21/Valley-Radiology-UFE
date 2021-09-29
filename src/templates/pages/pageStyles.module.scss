@@ -1,0 +1,64 @@
+@import "../../shared/variables.scss";
+
+.sidebar {
+  padding-top: 5px;
+
+  p {
+    color: $primary-color;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 1.3em;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      color: $brighter-primary;
+    }
+  }
+
+  small {
+    color: $gray;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .gform_wrapper form {
+    margin-top: 1rem;
+
+    input[type="text"] {
+      border: 2px solid #fff;
+      background: #fff !important;
+    }
+  }
+}
+
+.pageContent {
+  color: $gray;
+  padding-bottom: 3rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+    clear: both;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      color: $brighter-primary;
+    }
+  }
+}

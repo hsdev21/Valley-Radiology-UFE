@@ -1,0 +1,20 @@
+.gravityForm {
+  .button {
+    border: 1px solid #fff !important;
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+
+  span {
+    color: #707070;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}

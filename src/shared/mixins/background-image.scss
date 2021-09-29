@@ -1,0 +1,4 @@
+@mixin backgroundImage($backgroundUrl, $position) {
+  background-size: cover;
+  background: url($backgroundUrl) no-repeat $position/cover;
+}

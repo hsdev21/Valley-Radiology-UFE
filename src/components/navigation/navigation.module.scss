@@ -1,0 +1,35 @@
+.navBar {
+  background: rgb(157, 175, 37);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(157, 175, 37, 1) 0%,
+    rgba(193, 215, 47, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(157, 175, 37, 1) 0%,
+    rgba(193, 215, 47, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(157, 175, 37, 1) 0%,
+    rgba(193, 215, 47, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9daf25",endColorstr="#c1d72f",GradientType=1);
+  padding: 0;
+
+  .toggle {
+    background: #fff;
+    color: #fff;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .navLink:first-child {
+      display: none;
+    }
+  }
+}

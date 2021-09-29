@@ -1,0 +1,26 @@
+@import "../../shared/variables.scss";
+
+.sliderWrap {
+  background: #fff;
+  position: relative;
+
+  .slick-dots li {
+    margin-right: 0.65em;
+  }
+
+  .slick-dots li button:before {
+    color: $gray !important;
+    font-size: 12px !important;
+    opacity: 0.6 !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #00aeef !important;
+    opacity: 1 !important;
+  }
+
+  .slick-track {
+    align-items: center;
+    display: flex;
+  }
+}
