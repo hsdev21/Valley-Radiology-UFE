@@ -14,24 +14,24 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-MWR8SDW",
-        includeInDevelopment: true,
+    // {
+    //   resolve: "gatsby-plugin-google-tagmanager",
+    //   options: {
+    //     id: "GTM-MWR8SDW",
+    //     includeInDevelopment: true,
 
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
-        defaultDataLayer: { platform: "gatsby" },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-60850372-3",
-      },
-    },
+    //     // Include GTM in development.
+    //     //
+    //     // Defaults to false meaning GTM will only be loaded in production.
+    //     defaultDataLayer: { platform: "gatsby" },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-60850372-3",
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-catch-links`,
       options: {

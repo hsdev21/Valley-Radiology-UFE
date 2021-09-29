@@ -7,7 +7,7 @@ import homePageStyles from "./index.module.scss"
 import GravityForm from "../components/gravity-form/gravity-form"
 import SEO from "../components/seo"
 import { GetHomePageMeta } from "../hooks/getHomePageMeta"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Slider from "../components/slider/slider"
 
 import aetna from "../images/aetna.jpg"
@@ -41,15 +41,21 @@ const IndexPage = ({ data }) => {
         <Container>
           <Row className={homePageStyles.row}>
             <Col lg={6} className={`${homePageStyles.text}`}>
-              <h1>Find out if you have peripheral artery disease</h1>
+              <h1>
+                Do you know relief from uterine fibroids is possible without
+                surgery?
+              </h1>
               <p>
-                Peripheral artery disease (PAD) is when your arteries become
-                clogged, usually due to plaque or calcium buildup. This is a
-                normal part of aging and primarily affects the arteries in the
-                legs. When blood vessels are blocked, painful wounds or ulcers
-                can develop. The highly trained vascular and interventional
-                specialists at Valley Radiology's limb salvage center use their
-                knowledge and expertise to treat PAD successfully.
+                Valley Radiology has a safe and effective solution for you --
+                Uterine Fibroid Embolization. We provide personalized care for
+                your uterine fibroids.
+              </p>
+              <p>
+                Valley Radiology specializes in the diagnosis and treatment of
+                uterine fibroids. With a strong focus and understanding of
+                effective therapy, our team of interventional specialists
+                provides minimally invasive treatment without the need for
+                extensive surgery or long recovery times.{" "}
               </p>
             </Col>
             <Col lg={6} className={homePageStyles.heroForm}>
@@ -71,29 +77,38 @@ const IndexPage = ({ data }) => {
       </BackgroundImage>
       <Container fluid className={homePageStyles.callOut}>
         <Container>
-          If PAD is left untreated, it could result in amputation and
-          disability, eventually leading to death!
+          UFE can relieve your symptoms. Get treatment for your fibroids now.
+          Schedule a consultation today.
         </Container>
       </Container>
       <Container fluid className={homePageStyles.section2}>
         <Container className={homePageStyles.genericSection}>
           <Row className={homePageStyles.mobileReverse}>
             <Col lg={6} className={homePageStyles.verticalCenter}>
-              <h2>Don’t ignore the symptoms</h2>
+              <h2>Have you been diagnosed with uterine fibroids?</h2>
+              <p>
+                Between 20-70% of women develop fibroids. Uterine Fibroids are
+                one of the most common diagnoses in reproductive women. The good
+                news is they are benign and harmless growths in your uterus.
+                However, the fibroids can be extremely painful and challenging
+                to live with.
+              </p>
+              <strong>Don’t ignore the symptoms:</strong>
               <ul>
-                <li>Leg fatigue with pain while walking</li>
-                <li>Sores</li>
-                <li>Wounds or ulcers that do not heal</li>
-                <li>Discoloration of legs</li>
-                <li>Numbness or Tingling</li>
+                <li>Heavy bleeding</li>
+                <li>Abdominal pain</li>
+                <li>Back pain</li>
+                <li>Prolonged periods</li>
+                <li>Frequent urination</li>
+                <li>Bowel issues</li>
               </ul>
-              <p className={homePageStyles.buttonBottom}>
+              <p>
                 <Button
                   variant={"primary"}
                   className={homePageStyles.secondaryBtn}
                   href="/contact/"
                 >
-                  Book Online
+                  Learn More
                 </Button>
               </p>
             </Col>
@@ -118,65 +133,28 @@ const IndexPage = ({ data }) => {
               />
             </Col>
             <Col lg={6} className={homePageStyles.verticalCenter}>
-              <h2>Are you at high-risk for PAD?</h2>
+              <h2>Uterine Fibroid Embolization (UFE) Relieves Symptoms</h2>
               <p>
-                Not everyone experiences the same symptoms of PAD. This
-                condition is often misdiagnosed, making it vital to pay
-                attention to risk factors. The most significant risk factors are
-                <strong> hypertension, diabetes, and smoking.</strong> If you’re
-                under 50 and overweight or have high blood pressure, we
-                recommend a checkup and screening. If you’re over 65 and/or have
-                leg pain, numbness, or other symptoms, make an appointment today
-                to prevent future complications.
+                Pelvic pain from fibroids can range in severity from person to
+                person. Uterine fibroid embolization (UFE) is a minimally
+                invasive treatment option. Our specialists perform uterine
+                fibroid embolization to relieve the symptoms of fibroids without
+                a lengthy hospital stay or extended recovery time.
               </p>
               <p className={homePageStyles.buttonBottom}>
                 <Button
                   variant={"primary"}
                   className={homePageStyles.mainBtn}
-                  href="/contact/"
+                  href="/uterine-fibroid-embolization-ufe/"
                 >
-                  Book Online
+                  Relief Is Here
                 </Button>
               </p>
             </Col>
           </Row>
         </Container>
       </Container>
-      <Container fluid>
-        <Container className={homePageStyles.genericSection}>
-          <Row className={homePageStyles.mobileReverse}>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
-              <h2>Receive a Timely Diagnoses and Tailored Treatment </h2>
-              <p>
-                The experienced specialists at Valley Radiology regularly
-                diagnose and treat men and women with PAD. Our team will
-                carefully diagnose and treat your condition utilizing the latest
-                technology and equipment. We create a tailored treatment plan to
-                deliver the best results for our patients. We also encourage and
-                oversee lifestyle changes to reduce pain and enhance your
-                quality of life.
-              </p>
-              <p className={homePageStyles.buttonBottom}>
-                <Button
-                  variant={"primary"}
-                  className={homePageStyles.secondaryBtn}
-                  href="/innovative-treatments/"
-                >
-                  Learn More
-                </Button>
-              </p>
-            </Col>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
-              <Img
-                className={homePageStyles.homeImg}
-                fluid={data.section4.childImageSharp.fluid}
-                alt="A technician putting a patient in an MRI machine."
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Container fluid>
+      <Container fluid style={{ display: "none" }}>
         <Container
           className={`${homePageStyles.genericSection} ${homePageStyles.testimonialSlider}`}
         >
@@ -232,9 +210,34 @@ const IndexPage = ({ data }) => {
           </div>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.lightBack}>
+      <Container fluid>
         <Container className={homePageStyles.genericSection}>
           <Row>
+            <Col lg={6} className={homePageStyles.verticalCenter}>
+              <h2>
+                <Link style={{ color: "#000" }} to="/our-specialists/">
+                  Meet Murali Meka, MD, and Bryan Swilley, MD
+                </Link>
+              </h2>
+              <p>
+                Our board-certified vascular and interventional specialists,
+                Murali Meka, MD, and Bryan Swilley, MD, specialize in diagnosing
+                and treating uterine fibroids. They each bring a strong focus
+                and background ineffective therapy through interventional
+                radiology. Having this expertise in a single location, focused
+                on you, means that you’re receiving the best treatment plan
+                possible.
+              </p>
+              <p className={homePageStyles.buttonBottom}>
+                <Button
+                  variant={"primary"}
+                  className={homePageStyles.secondaryBtn}
+                  href="/our-specialists/"
+                >
+                  Meet Our Expert Team
+                </Button>
+              </p>
+            </Col>
             <Col
               lg={6}
               className={homePageStyles.verticalCenter}
@@ -251,26 +254,40 @@ const IndexPage = ({ data }) => {
                 <Col xs={6}>Dr. Bryan Swilley</Col>
               </Row>
             </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid className={homePageStyles.lightBack}>
+        <Container className={homePageStyles.genericSection}>
+          <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
-              <h2>Meet Murali Meka, MD, and Bryan Swilley, MD</h2>
+              <Img
+                className={`${homePageStyles.homeImg} ${homePageStyles.blueBorder}`}
+                fluid={data.section6.childImageSharp.fluid}
+                alt="A couple sitting together."
+              />
+            </Col>
+            <Col lg={6} className={homePageStyles.verticalCenter}>
+              <h2>Avoid a Hysterectomy</h2>
               <p>
-                Our board-certified vascular and interventional specialists,
-                Murali Meka, MD, and Bryan Swilley, MD, specialize in diagnosing
-                and treating PAD. They each bring a strong focus and extensive
-                training in effective therapy through interventional radiology.
-                Having this expertise in a single location, focused on you,
-                means that you’re receiving the most innovative treatment
-                methods possible. Regardless of your diagnosis, we can help
-                determine the next steps and provide a treatment option that
-                works for you.
+                UFE is a treatment option with low-risk and high success. UFE is
+                performed in an outpatient setting and the routine procedure
+                time is typically under an hour. With the use of a specialized
+                camera, a catheter is inserted into the uterine vessels. Embolic
+                material is injected into the vessels that feed the fibroids,
+                depriving them of their blood supply. Over time the fibroids
+                begin to shrink and disappear, along with the symptoms. UFE Is
+                one of the safest and most successful alternatives to a
+                hysterectomy and is performed by our interventional specialists
+                at Valley Radiology.
               </p>
               <p className={homePageStyles.buttonBottom}>
                 <Button
                   variant={"primary"}
-                  className={homePageStyles.secondaryBtn}
-                  href="/our-specialists/"
+                  className={homePageStyles.mainBtn}
+                  href="/contact/"
                 >
-                  Meet Our Expert Team
+                  Recover Faster
                 </Button>
               </p>
             </Col>
@@ -365,7 +382,7 @@ const IndexPage = ({ data }) => {
               className={homePageStyles.formContainer}
             >
               <h2>
-                Contact Us
+                Contact Us.
                 <br />
                 We're Ready to Help.
               </h2>
@@ -390,7 +407,7 @@ export const query = graphql`
   query {
     section1: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
+        fluid(quality: 100, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -417,6 +434,13 @@ export const query = graphql`
       }
     }
     section5: file(relativePath: { eq: "section-5.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    section6: file(relativePath: { eq: "section-6.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
