@@ -408,77 +408,77 @@ export const query = graphql`
     section1: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     section2: file(relativePath: { eq: "section-2.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     section3: file(relativePath: { eq: "section-3.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     section4: file(relativePath: { eq: "section-4.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     section5: file(relativePath: { eq: "section-5.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     section6: file(relativePath: { eq: "section-6.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     section7: file(relativePath: { eq: "section-7.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     aetna: file(relativePath: { eq: "aetna.jpg" }) {
       childImageSharp {
         fluid(quality: 90) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     blue: file(relativePath: { eq: "blue.jpg" }) {
       childImageSharp {
         fluid(quality: 90) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     contactSection: file(relativePath: { eq: "contact-us-bg.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sliderImage: file(relativePath: { eq: "slider.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
