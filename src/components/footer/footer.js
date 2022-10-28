@@ -17,7 +17,7 @@ const Footer = () => (
         </Col>
       </Row>
       <Row>
-        <Col lg={12} className={`${footerStyles.map} text-center`}>
+        <Col lg={6} className={`${footerStyles.map} text-center`}>
           <h3>
             Telephone: <a href="tel:+1-910-486-5700">910-486-5700</a>
           </h3>
@@ -38,6 +38,28 @@ const Footer = () => (
             title="Fayetteville location map"
           ></iframe>
         </Col>
+        <Col lg={6} className={`${footerStyles.map} text-center`}>
+          <h3>
+            Telephone: <a href="tel:+1-919-331-2001">919-331-2001</a>
+          </h3>
+          <h3>Fax: 919-331-2003</h3>
+          <p>
+            169 Rawls Road
+            <br />
+            Angier, NC 27501
+            <br />
+            Monday - Friday: 8am - 5pm
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.5675494618213!2d-78.743866!3d35.51497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ab81eca8d8396f%3A0x85e68e6baa2255d9!2sValley%20Radiology%20Angier!5e0!3m2!1sen!2sus!4v1663792649646!5m2!1sen!2sus"
+            width="100%"
+            height="350"
+            style={{ border: "1px solid #C1D72F", maxWidth: "600px" }}
+            loading="lazy"
+            title="Angier location map"
+          ></iframe>
+        </Col>
+
       </Row>
       <Row>
         <Col className={footerStyles.footerNav}>
