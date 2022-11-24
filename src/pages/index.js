@@ -220,7 +220,13 @@ const IndexPage = ({ data }) => {
                 </Link>
               </h2>
               <p>
-              Our board-certified vascular and interventional specialists, Murali Meka, M.D., Tirth Patel, M.D. and Osmani Deochand, M.D., specialize in diagnosing and treating PAD. They each bring a strong focus and extensive training in effective therapy through interventional radiology. Having this expertise in a single location, focused on you, means that you’re receiving the most innovative treatment methods possible. Regardless of your diagnosis, we can help determine the next steps and provide a treatment option that works for you.
+              Our board-certified vascular and interventional specialists,
+                Murali Meka, MD, Tirth Patel, MD and Osmani Deochand, MD, specialize in diagnosing
+                and treating uterine fibroids. They each bring a strong focus
+                and background ineffective therapy through interventional
+                radiology. Having this expertise in a single location, focused
+                on you, means that you’re receiving the best treatment plan
+                possible.
               </p>
               <p className={homePageStyles.buttonBottom}>
                 <Button
