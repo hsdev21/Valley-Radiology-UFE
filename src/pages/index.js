@@ -216,17 +216,11 @@ const IndexPage = ({ data }) => {
             <Col lg={6} className={homePageStyles.verticalCenter}>
               <h2>
                 <Link style={{ color: "#000" }} to="/our-specialists/">
-                  Meet Murali Meka, MD, and Bryan Swilley, MD
+                  Meet Murali Meka, MD, Tirth Patel, MD and Osmani Deochand, MD
                 </Link>
               </h2>
               <p>
-                Our board-certified vascular and interventional specialists,
-                Murali Meka, MD, and Bryan Swilley, MD, specialize in diagnosing
-                and treating uterine fibroids. They each bring a strong focus
-                and background ineffective therapy through interventional
-                radiology. Having this expertise in a single location, focused
-                on you, means that you’re receiving the best treatment plan
-                possible.
+              Our board-certified vascular and interventional specialists, Murali Meka, M.D., Tirth Patel, M.D. and Osmani Deochand, M.D., specialize in diagnosing and treating PAD. They each bring a strong focus and extensive training in effective therapy through interventional radiology. Having this expertise in a single location, focused on you, means that you’re receiving the most innovative treatment methods possible. Regardless of your diagnosis, we can help determine the next steps and provide a treatment option that works for you.
               </p>
               <p className={homePageStyles.buttonBottom}>
                 <Button
@@ -246,13 +240,13 @@ const IndexPage = ({ data }) => {
               <Img
                 className={homePageStyles.homeImg}
                 fluid={data.section5.childImageSharp.fluid}
-                alt="Doctors Murali Meka and Bryan Swilley."
+                alt="Doctors Murali Meka, M.D., Tirth Patel, M.D. and Osmani Deochand, M.D."
                 style={{ marginBottom: "5px" }}
               />
-              <Row>
+              {/* <Row>
                 <Col xs={6}>Dr. Murali Meka</Col>
                 <Col xs={6}>Dr. Bryan Swilley</Col>
-              </Row>
+              </Row> */}
             </Col>
           </Row>
         </Container>
