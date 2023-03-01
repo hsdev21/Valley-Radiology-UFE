@@ -216,7 +216,7 @@ const IndexPage = ({ data }) => {
             <Col lg={6} className={homePageStyles.verticalCenter}>
               <h2>
                 <Link style={{ color: "#000" }} to="/our-specialists/">
-                  Meet Murali Meka, MD, Tirth Patel, MD and Osmani Deochand, MD
+                  Meet Tirth Patel, MD, Murali Meka, MD, and Osmani Deochand, MD
                 </Link>
               </h2>
               <p>
