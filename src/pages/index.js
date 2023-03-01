@@ -220,13 +220,7 @@ const IndexPage = ({ data }) => {
                 </Link>
               </h2>
               <p>
-              Our board-certified vascular and interventional specialists,
-                Murali Meka, MD, Tirth Patel, MD and Osmani Deochand, MD, specialize in diagnosing
-                and treating uterine fibroids. They each bring a strong focus
-                and background ineffective therapy through interventional
-                radiology. Having this expertise in a single location, focused
-                on you, means that you’re receiving the best treatment plan
-                possible.
+              Our board-certified vascular and interventional specialists, Tirth Patel, MD, Murali Meka, MD, and Osmani Deochand, MD, specialize in diagnosing and treating uterine fibroids. They each bring a strong focus and technical background in effective treatments performed through interventional radiology. Having this expertise in a single location, focused on you, means that you’re receiving the best treatment plan possible.
               </p>
               <p className={homePageStyles.buttonBottom}>
                 <Button
